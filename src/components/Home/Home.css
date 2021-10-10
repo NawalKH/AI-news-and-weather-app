@@ -1,0 +1,24 @@
+
+.hidden {
+    opacity: 0; 
+    transition: opacity 250ms ease-out, transform 250ms ease-out;
+    
+}
+
+.bkg{
+  opacity: 1;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  background-color: white;
+  height: 100%;
+}
+
+.section {
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    border: 20;
+    color: black;  
+    text-align: center;
+    }
+
+    
