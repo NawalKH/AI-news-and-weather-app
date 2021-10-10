@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/AI-news-and-weather-app/static/css/main.b4d7ebe5.chunk.css",
+    "main.js": "/AI-news-and-weather-app/static/js/main.573120a3.chunk.js",
+    "main.js.map": "/AI-news-and-weather-app/static/js/main.573120a3.chunk.js.map",
+    "runtime-main.js": "/AI-news-and-weather-app/static/js/runtime-main.3b57e0a8.js",
+    "runtime-main.js.map": "/AI-news-and-weather-app/static/js/runtime-main.3b57e0a8.js.map",
+    "static/js/2.620c64ae.chunk.js": "/AI-news-and-weather-app/static/js/2.620c64ae.chunk.js",
+    "static/js/2.620c64ae.chunk.js.map": "/AI-news-and-weather-app/static/js/2.620c64ae.chunk.js.map",
+    "index.html": "/AI-news-and-weather-app/index.html",
+    "static/css/main.b4d7ebe5.chunk.css.map": "/AI-news-and-weather-app/static/css/main.b4d7ebe5.chunk.css.map",
+    "static/js/2.620c64ae.chunk.js.LICENSE.txt": "/AI-news-and-weather-app/static/js/2.620c64ae.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b57e0a8.js",
+    "static/js/2.620c64ae.chunk.js",
+    "static/css/main.b4d7ebe5.chunk.css",
+    "static/js/main.573120a3.chunk.js"
+  ]
+}
