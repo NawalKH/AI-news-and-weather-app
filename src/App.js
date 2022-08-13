@@ -5,7 +5,7 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 import { Feedback } from './components';
 import useStyles from './styles';
 
-const alanKey = "8d6f867613a2764fe7a402c0818462772e956eca572e1d8b807a3e2338fdd0dc/stage";
+const alanKey = process.env.REACT_APP_ALAN_KEY;
 
 const App = () => {
 
