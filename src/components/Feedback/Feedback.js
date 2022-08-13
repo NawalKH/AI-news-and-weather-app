@@ -4,7 +4,7 @@ import {Card, CardContent, Grid, Grow, Typography } from '@material-ui/core';
 import NewsCard from '../NewsCards/NewsCard.js';
 import Home from '../Home/Home.js';
 import "./Feedback.css";
-import FadeInSection from '../../FadeInSection.js';
+import FadeInSection from '../../utils/FadeInSection.js';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import AcUnitIcon from '@material-ui/icons/AcUnit';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
@@ -20,13 +20,13 @@ const texts = [
 const Feedback = ({ weatherinfo, articles, activeArticle }) => {
  
 
-  if (!weatherinfo.hasOwnProperty("weather") && !articles.length && activeArticle==0) {
+  if (!weatherinfo.hasOwnProperty("weather") && !articles.length && activeArticle===0) {
     return (
       <div className="intro">
         
       <div className="titles">
       {texts.map((text, i) => (
-        <p  style={{animation: `fade-animation 15s linear ${i * 3}s`}}>{text}</p>
+        <p key={i} direction="column" style={{animation: `fade-animation 15s linear ${i * 3}s`}}>{text}</p>
       ))}
 
         </div>  
@@ -34,7 +34,7 @@ const Feedback = ({ weatherinfo, articles, activeArticle }) => {
         </div>
      
     );
-  } else if(!weatherinfo.hasOwnProperty("weather") && !articles.length && activeArticle==-1){
+  } else if(!weatherinfo.hasOwnProperty("weather") && !articles.length && activeArticle===-1){
     return (
       <div className="intro"> 
       <Home></Home>
@@ -83,7 +83,7 @@ const Feedback = ({ weatherinfo, articles, activeArticle }) => {
     <Grow in>
       <Grid className="container" container alignItems="stretch" spacing={3}>
         {articles.map((article, i) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} style={{ display: 'flex' }}>
+          <Grid key={i} item xs={12} sm={6} md={4} lg={3} style={{ display: 'flex' }}>
             <NewsCard activeArticle={activeArticle} i={i} article={article} />
           </Grid>
         ))}

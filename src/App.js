@@ -5,17 +5,13 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 import { Feedback } from './components';
 import useStyles from './styles';
 
-
-const alanKey ='8d6f867613a2764fe7a402c0818462772e956eca572e1d8b807a3e2338fdd0dc/stage';
+const alanKey = "8d6f867613a2764fe7a402c0818462772e956eca572e1d8b807a3e2338fdd0dc/stage";
 
 const App = () => {
 
   const [activeArticle, setActiveArticle] = useState(0);
   const [newsArticles, setNewsArticles] = useState([]);
-  
-
   const [Weather , setWeather] = useState([]);
-  
   const classes = useStyles();
 
   useEffect(() => {
@@ -30,8 +26,6 @@ const App = () => {
           setActiveArticle(-1);
           setNewsArticles(articles);
           setWeather([]);
-          console.log(articles.length);
-          console.log(activeArticle);
 
         }else if (command === 'highlight') {
           setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
@@ -76,7 +70,6 @@ const App = () => {
 
   );
 };
-
 
 
 export default App;

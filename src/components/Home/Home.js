@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 
 import { Grid, Grow } from '@material-ui/core';
-import FadeInSection from '../../FadeInSection';
+import FadeInSection from '../../utils/FadeInSection';
 import CloudIcon from '@material-ui/icons/Cloud';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
@@ -37,9 +37,9 @@ export default class Home extends React.Component {
         <div className={this.state.hidden +" "+ this.state.bkg} style={{ padding: 20 }}>
        
             <Grow in >
-        <Grid container alignItems="stretch" spacing={3} alignItems="center" justify="center" style={{ minHeight: '100%' }}>
+        <Grid container alignItems="center" spacing={3} justifyContent="center" style={{ minHeight: '100%' }}>
           {sections.map((section) => ( 
-            <Grid item xs={16} sm={12} md={7} lg={6} >
+            <Grid key={section.title} item xs={"auto"} sm={12} md={7} lg={6} >
                <FadeInSection>
               <div className="section">
                 {section.image}
@@ -52,8 +52,7 @@ export default class Home extends React.Component {
         </Grid>
       </Grow>
       
-              </div>
-         
+              </div>     
         )
      }
 }
